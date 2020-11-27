@@ -1,0 +1,80 @@
++ pip install nbzip
+Collecting nbzip
+  Downloading nbzip-0.1.0-py3-none-any.whl (4.5 kB)
+Collecting pytest
+  Downloading pytest-6.1.2-py3-none-any.whl (272 kB)
+Requirement already satisfied: notebook in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbzip) (6.0.3)
+Collecting iniconfig
+  Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+Requirement already satisfied: attrs>=17.4.0 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from pytest->nbzip) (19.3.0)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /srv/conda/envs/notebook/lib/python3.7/site-packages (from pytest->nbzip) (1.7.0)
+Requirement already satisfied: packaging in /srv/conda/envs/notebook/lib/python3.7/site-packages (from pytest->nbzip) (20.4)
+Collecting toml
+  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting pluggy<1.0,>=0.12
+  Downloading pluggy-0.13.1-py2.py3-none-any.whl (18 kB)
+Collecting py>=1.8.2
+  Downloading py-1.9.0-py2.py3-none-any.whl (99 kB)
+Requirement already satisfied: jupyter-core>=4.6.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (4.6.3)
+Requirement already satisfied: Send2Trash in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (1.5.0)
+Requirement already satisfied: jinja2 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (2.11.2)
+Requirement already satisfied: jupyter-client>=5.3.4 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (6.1.6)
+Requirement already satisfied: prometheus-client in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (0.8.0)
+Requirement already satisfied: traitlets>=4.2.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (4.3.3)
+Requirement already satisfied: nbconvert in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (6.0.7)
+Requirement already satisfied: pyzmq>=17 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (19.0.1)
+Requirement already satisfied: terminado>=0.8.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (0.8.3)
+Requirement already satisfied: ipykernel in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (5.3.4)
+Requirement already satisfied: nbformat in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (5.0.7)
+Requirement already satisfied: tornado>=5.0 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (6.0.4)
+Requirement already satisfied: ipython-genutils in /srv/conda/envs/notebook/lib/python3.7/site-packages (from notebook->nbzip) (0.2.0)
+Requirement already satisfied: zipp>=0.5 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from importlib-metadata>=0.12; python_version < "3.8"->pytest->nbzip) (3.1.0)
+Requirement already satisfied: pyparsing>=2.0.2 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from packaging->pytest->nbzip) (2.4.7)
+Requirement already satisfied: six in /srv/conda/envs/notebook/lib/python3.7/site-packages (from packaging->pytest->nbzip) (1.15.0)
+Requirement already satisfied: MarkupSafe>=0.23 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from jinja2->notebook->nbzip) (1.1.1)
+Requirement already satisfied: python-dateutil>=2.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from jupyter-client>=5.3.4->notebook->nbzip) (2.8.1)
+Requirement already satisfied: decorator in /srv/conda/envs/notebook/lib/python3.7/site-packages (from traitlets>=4.2.1->notebook->nbzip) (4.4.2)
+Requirement already satisfied: jupyterlab-pygments in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbconvert->notebook->nbzip) (0.1.2)
+Requirement already satisfied: bleach in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbconvert->notebook->nbzip) (3.1.5)
+Requirement already satisfied: pandocfilters>=1.4.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbconvert->notebook->nbzip) (1.4.2)
+Requirement already satisfied: testpath in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbconvert->notebook->nbzip) (0.4.4)
+Requirement already satisfied: nbclient<0.6.0,>=0.5.0 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbconvert->notebook->nbzip) (0.5.1)
+Requirement already satisfied: entrypoints>=0.2.2 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbconvert->notebook->nbzip) (0.3)
+Requirement already satisfied: defusedxml in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbconvert->notebook->nbzip) (0.6.0)
+Requirement already satisfied: mistune<2,>=0.8.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbconvert->notebook->nbzip) (0.8.4)
+Requirement already satisfied: pygments>=2.4.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbconvert->notebook->nbzip) (2.6.1)
+Requirement already satisfied: ipython>=5.0.0 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from ipykernel->notebook->nbzip) (7.16.1)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbformat->notebook->nbzip) (3.2.0)
+Requirement already satisfied: webencodings in /srv/conda/envs/notebook/lib/python3.7/site-packages (from bleach->nbconvert->notebook->nbzip) (0.5.1)
+Requirement already satisfied: async-generator in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert->notebook->nbzip) (1.10)
+Requirement already satisfied: nest-asyncio in /srv/conda/envs/notebook/lib/python3.7/site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert->notebook->nbzip) (1.4.3)
+Requirement already satisfied: pexpect; sys_platform != "win32" in /srv/conda/envs/notebook/lib/python3.7/site-packages (from ipython>=5.0.0->ipykernel->notebook->nbzip) (4.8.0)
+Requirement already satisfied: setuptools>=18.5 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from ipython>=5.0.0->ipykernel->notebook->nbzip) (49.2.0.post20200712)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from ipython>=5.0.0->ipykernel->notebook->nbzip) (3.0.5)
+Requirement already satisfied: backcall in /srv/conda/envs/notebook/lib/python3.7/site-packages (from ipython>=5.0.0->ipykernel->notebook->nbzip) (0.2.0)
+Requirement already satisfied: jedi>=0.10 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from ipython>=5.0.0->ipykernel->notebook->nbzip) (0.17.2)
+Requirement already satisfied: pickleshare in /srv/conda/envs/notebook/lib/python3.7/site-packages (from ipython>=5.0.0->ipykernel->notebook->nbzip) (0.7.5)
+Requirement already satisfied: pyrsistent>=0.14.0 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook->nbzip) (0.16.0)
+Requirement already satisfied: ptyprocess>=0.5 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from pexpect; sys_platform != "win32"->ipython>=5.0.0->ipykernel->notebook->nbzip) (0.6.0)
+Requirement already satisfied: wcwidth in /srv/conda/envs/notebook/lib/python3.7/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=5.0.0->ipykernel->notebook->nbzip) (0.2.5)
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from jedi>=0.10->ipython>=5.0.0->ipykernel->notebook->nbzip) (0.7.1)
+Installing collected packages: iniconfig, toml, pluggy, py, pytest, nbzip
+Successfully installed iniconfig-1.1.1 nbzip-0.1.0 pluggy-0.13.1 py-1.9.0 pytest-6.1.2 toml-0.10.2
++ jupyter serverextension enable --py nbzip --sys-prefix
+Enabling: nbzip
+- Writing config: /srv/conda/envs/notebook/etc/jupyter
+    - Validating...
+      nbzip  [32mOK[0m
++ jupyter nbextension install --py nbzip --user
+Installing /srv/conda/envs/notebook/lib/python3.7/site-packages/nbzip/static -> nbzip
+Making directory: /home/jovyan/.local/share/jupyter/nbextensions/nbzip/
+Copying: /srv/conda/envs/notebook/lib/python3.7/site-packages/nbzip/static/tree.js -> /home/jovyan/.local/share/jupyter/nbextensions/nbzip/tree.js
+- Validating: [32mOK[0m
+
+    To initialize this nbextension in the browser every time the notebook (or other app) loads:
+    
+          jupyter nbextension enable nbzip --user --py
+    
++ jupyter nbextension enable --py nbzip
+Enabling tree extension nbzip/tree...
+      - Validating: [32mOK[0m
